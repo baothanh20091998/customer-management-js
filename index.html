@@ -104,10 +104,8 @@
 								<tr>
 									<th class="nowrap">
 										<span class="mr-1">Mã nhân viên</span>
-										<i class="fa fa-arrow-up" style="cursor:pointer" id="SapXepTang"
-											onclick="handleSortUp()"></i>
-										<i class="fa fa-arrow-down" style="cursor:pointer" id="SapXepGiam"
-											onclick="handleSortDown()"></i>
+										<i class="fa fa-arrow-up" style="cursor:pointer" id="SapXepTang"></i>
+										<i class="fa fa-arrow-down" style="cursor:pointer" id="SapXepGiam"></i>
 									</th>
 									<th>Họ và tên nhân viên</th>
 									<th>Email</th>
@@ -221,7 +219,7 @@
 									<span class="input-group-text"><i class="fa fa-briefcase"></i></span>
 								</div>
 								<select class="form-control" id="chucvu">
-									<option>Chọn chức vụ</option>
+									<option value="chonChucVu">Chọn chức vụ</option>
 									<option>Sếp</option>
 									<option>Trưởng phòng</option>
 									<option>Nhân viên</option>
@@ -236,9 +234,9 @@
 				</div>
 				<!-- Modal footer -->
 				<div class="modal-footer" id="modal-footer">
-					<button id="btnThemNV" type="button" onclick="handleAddCustomer()" class="btn btn-success">Thêm
+					<button id="btnThemNV" type="button" class="btn btn-success">Thêm
 						người dùng</button>
-					<button id="btnCapNhat" onclick="handleUpdate()" type="button" class="btn btn-success">Cập
+					<button id="btnCapNhat" type="button" class="btn btn-success">Cập
 						nhật</button>
 					<button id="btnDong" type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
 				</div>
@@ -276,6 +274,11 @@
 	</script>
 	<!-- <script src="./app/models/"></script> -->
 	<!-- <script src="./app/services/"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
+		integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./app/api/api.js"></script>
+	<script src="./app/models/nhanvien.js"></script>
 	<script src="./app/controllers/index.js"></script>
 </body>
 
