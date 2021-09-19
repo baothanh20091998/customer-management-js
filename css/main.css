@@ -80,4 +80,7 @@
   #sidebar {
     display: none;
   }
+  form {
+    width: unset;
+  }
 }
