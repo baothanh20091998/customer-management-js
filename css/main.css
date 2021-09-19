@@ -1,22 +1,83 @@
 .sp-thongbao {
   color: red;
-  margin-left: 2px; 
+  margin-left: 2px;
   display: none;
 }
 
-#SapXepGiam{
-	display: none;
+#SapXepGiam {
+  display: none;
 }
 
-#content{
-	width: 100%;
-	background: #74ebd5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+#content {
+  width: 100%;
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #acb6e5,
+    #74ebd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #acb6e5,
+    #74ebd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.myCardHeader,
+.myCardFooter {
+  background-color: transparent;
+}
 
-.myCardHeader, .myCardFooter{
-	background-color: transparent;       
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  #sidebar {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .sidebar-header h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebarCollapse span {
+    display: inline-block;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebar {
+    margin-left: 0 !important;
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+  }
+  .navbar-default {
+    display: none;
+  }
+}
+
+@media (max-width: 736px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    max-width: unset;
+  }
+}
+
+@media (max-width: 414px) {
+  html {
+    font-size: 10px;
+  }
+  .table td:nth-child(3) {
+    word-break: break-all;
+  }
+  .table td:nth-child(4) {
+    word-break: break-all;
+  }
+  #sidebar {
+    display: none;
+  }
 }
